@@ -43,40 +43,32 @@ header nav ul li a{
 }
 @media (max-width:768px) {
     header{
-        gap: 3px;
-        padding: 10px 10px 20px 0;
+        /* gap: 3px; */
+        /* padding: 10px 10px 20px 0; */
     
 
     }
-   nav ul{
-    display: flex;
-    /* justify-content: space-around; */
+   nav ul li a{
+    /* display: flex;
+    justify-content: space-around;
     white-space: nowrap;
     overflow-x: auto;
     flex: 1;
     scrollbar-width: none;
     font-size: 14px;
-    gap: 5px;
-    
-    
-
-   }
-   nav ul::-webkit-scrollbar{
+    gap: 5px; */
     display: none;
-   }
-   nav ul li{
-    flex: 0 0 auto;
-   }
-   nav ul li a{
-    
     
 
    }
   
    header h3{
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
     font-size: 14px;
+    margin:0 auto;
+   
+    
     
    
    }
