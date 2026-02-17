@@ -14,7 +14,7 @@ header{
      width: 100%;
      top: 0;
      left: 0;
-     z-index: 1000;
+     z-index: 999;
      
     
 }
@@ -41,40 +41,119 @@ header nav ul li a{
     color: #000;
    
 }
-header .fa-bars{
+/* header .fa-bars{
     display: none;
 }
+header .media{
+    display: none;
+} */
+ .menu-btn{
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 15px;
+    display: none;
+ }
+ .side-menu{
+    position: fixed;
+    top: 0;
+    left: -250;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+ }
+ .side-menu a{
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    transition: 0.5s;
+ }
+ .side-menu a:hover{
+    background-color: #444;
+ }
+ .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+ }
 @media (max-width:768px) {
-     header .fa-bars{
+     /* header .fa-bars{
         display: block;
-        /* margin-right: 40%; */
        position: absolute;
        left: 10%;
-    }
+    } */
    nav ul li a{
-    /* display: flex;
-    justify-content: space-around;
-    white-space: nowrap;
-    overflow-x: auto;
-    flex: 1;
-    scrollbar-width: none;
-    font-size: 14px;
-    gap: 5px; */
     display: none;
-    
-
    }
   
    header h3{
-    /* white-space: nowrap; */
-    /* text-overflow: ellipsis; */
     font-size: 14px;
-    margin-left: 45%;
-   
-    
-    
-   
+    margin-left: 39%;
    }
+   /* header .media{
+    display: block;
+    width: 30%;
+    height: 80vh;
+    background-color: red;
+    box-sizing: border-box;
+    z-index: 1000;
+   } */
+
+   .menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 15px;
+    display: block;
+    position: absolute;
+    left: 10%;
+ }
+ .side-menu{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+ }
+ .side-menu.active{
+    left: 0;
+ }
+ .side-menu a{
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    transition: 0.5s;
+ }
+ .side-menu a:hover{
+    background-color: #444;
+ }
+ .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+ }
 }
 
 /*  */
